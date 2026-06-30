@@ -1,4 +1,4 @@
-﻿package com.example.calculator
+package com.example.calculator
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -217,7 +218,7 @@ fun DisplayCard(currentValue: Float, actionText: Int) {
 }
 
 @Composable
-fun CalcButton(
+fun RowScope.CalcButton(
     label: String,
     color: Color,
     weight: Float,
